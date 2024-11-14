@@ -57,8 +57,8 @@ signals:
 
 private:
     QScreen *m_screen = nullptr;
-    int m_width = 1280;
-    int m_height = 720;
+    int m_width = 600;
+    int m_height = 1024;
 };
 
 #endif // APPLICATIONSETTINGS_H

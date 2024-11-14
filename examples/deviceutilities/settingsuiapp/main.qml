@@ -31,6 +31,8 @@ import QtQuick.Window
 import QtQuick.VirtualKeyboard
 import DeviceUtilities
 import DeviceUtilities.SettingsUI
+import QtQuick.Controls
+import DeviceUtilities.SettingsUI.Network
 
 Window {
     id: window
@@ -43,22 +45,24 @@ Window {
         width: window.width
         height: window.height
 
-        SettingsUI {
+        /*SettingsUI {
             id: settingsUI
             anchors.fill: parent
             anchors.bottomMargin: parent.height - inputPanel.y
-        }
+        }*/
 
-        /*  Handwriting input panel for full screen handwriting input.
+        StackView {
+              id: stackView
 
-        This component is an optional add-on for the InputPanel component, that
-        is, its use does not affect the operation of the InputPanel component,
-        but it also can not be used as a standalone component.
+              anchors.fill: parent
+              initialItem: SettingsUI {
+                  id: mainScreen
+              }
 
-        The handwriting input panel is positioned to cover the entire area of
-        application. The panel itself is transparent, but once it is active the
-        user can draw handwriting on it.
-        */
+              function tab() {
+                push(component, {})
+              }
+            }
 
         HandwritingInputPanel {
             z: 79

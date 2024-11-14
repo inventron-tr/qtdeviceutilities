@@ -41,7 +41,7 @@ Image {
     property alias fontFamily: buttonText.font.family
     signal clicked()
 
-    width: buttonText.contentWidth + cutSize * 4
+    width: buttonText.contentWidth + cutSize * 2
 
     MouseArea {
         id: mouseArea
@@ -53,7 +53,7 @@ Image {
         anchors.fill: parent
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
-        font.pixelSize: parent.height * 0.65
+        font.pixelSize: parent.height * 0.35
         //font.family: Globals.appFont
         color: "white"
     }

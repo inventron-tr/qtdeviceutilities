@@ -40,15 +40,15 @@ QtObject {
     readonly property color buttonActiveColor: "#216729"
     readonly property color scrollBarColor: "#41cd52"
 
-    readonly property real spacing: 0.5
-    readonly property real titleFontSize: 0.04
-    readonly property real subTitleFontSize: 0.035
-    readonly property real valueFontSize: 0.025
-    readonly property real fieldHeight: 0.07
-    readonly property real fieldTextHeight: 0.05
-    readonly property real buttonHeight: 0.05
+    readonly property real spacing: 0.4
+    readonly property real titleFontSize: 0.03
+    readonly property real subTitleFontSize: 0.025
+    readonly property real valueFontSize: 0.015
+    readonly property real fieldHeight: 0.06
+    readonly property real fieldTextHeight: 0.04
+    readonly property real buttonHeight: 0.04
 
     function margin(width) {
-        return (width / 3 * 2) * 0.05;
+        return (width / 3 * 2) * 0.04;
     }
 }

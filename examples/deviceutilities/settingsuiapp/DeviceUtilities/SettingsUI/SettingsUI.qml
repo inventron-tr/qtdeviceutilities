@@ -40,4 +40,5 @@ Rectangle {
     NetworkSettings {
         anchors.margins: margin
     }
+
 }

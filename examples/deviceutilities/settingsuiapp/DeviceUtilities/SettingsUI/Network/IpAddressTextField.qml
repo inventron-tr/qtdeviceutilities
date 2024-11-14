@@ -28,8 +28,9 @@
 ****************************************************************************/
 import QtQuick
 import QtQuick.Controls
+import QtQuick.Layouts
 
 TextField {
     Layout.fillWidth: true
-    validator: RegExpValidator { regExp: /^(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))$/ }
+    validator: RegularExpressionValidator { regularExpression: /^(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))$/ }
 }

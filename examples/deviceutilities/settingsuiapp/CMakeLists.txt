@@ -47,6 +47,7 @@ qt_add_qml_module(settingsapp
 target_link_libraries(settingsapp PRIVATE
     Qt::Core
     Qt::Gui
+    Qt::NetworkSettings
 )
 
 install(TARGETS settingsapp

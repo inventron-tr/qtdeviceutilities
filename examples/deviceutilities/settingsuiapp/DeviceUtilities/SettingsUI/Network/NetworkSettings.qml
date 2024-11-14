@@ -30,6 +30,7 @@ import QtQuick
 import QtDeviceUtilities.NetworkSettings
 import DeviceUtilities.QtButtonImageProvider
 import DeviceUtilities.SettingsUI
+import DeviceUtilities.SettingsUI.Network
 
 Item {
     id: networkSettingsRoot
@@ -136,4 +137,5 @@ Item {
         height: networkSettingsRoot.height
     }
 }
+
 

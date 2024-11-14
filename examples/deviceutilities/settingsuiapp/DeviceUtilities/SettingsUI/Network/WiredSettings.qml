@@ -39,16 +39,19 @@ Item {
     property string title: qsTr("Network");
 
     Component.onCompleted: {
-        NetworkSettingsManager.services.type = NetworkSettingsType.Wired;
+        /*NetworkSettingsManager.services.type = NetworkSettingsType.Wired;
+        console.log("1")
         root.service = NetworkSettingsManager.services.itemFromRow(0);
-        ipv4Method.currentIndex = service.ipv4.method
+        console.log("2")
+        ipv4Method.currentIndex = service.ipv4.method*/
     }
 
     onServiceChanged: {
-        NetworkSettingsManager.services.type = NetworkSettingsType.Wired;
-        if (!root.service) {
+        //NetworkSettingsManager.services.type = NetworkSettingsType.Wired;
+        /*if (!root.service) {
+            console.log("4")
             root.service = NetworkSettingsManager.services.itemFromRow(0);
-        }
+        }*/
     }
 
     GroupBox {

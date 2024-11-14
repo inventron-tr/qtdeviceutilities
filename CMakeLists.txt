@@ -32,3 +32,5 @@ if(WASM)
 endif()
 
 qt_build_repo()
+
+add_subdirectory(examples)

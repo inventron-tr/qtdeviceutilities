@@ -121,6 +121,21 @@ ListView {
                 }
             }
         }
+        Row {
+            QtButton {
+                id: editButton
+                fontFamily: Globals.appFont
+                width: 70
+                fillColor: Globals.buttonGreenColor
+                borderColor: "transparent"
+                text: qsTr("DETAILS")
+                enabled: true
+                onClicked: {
+                    stackView.push(Qt.resolvedUrl("WiredSettings.qml"), {service: NetworkSettingsManager.services.itemFromRow(index)});
+                }
+            }
+        }
+
         Rectangle {
             id: delegateBottom
             width: networkDelegate.width
